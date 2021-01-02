@@ -13,14 +13,14 @@ namespace Commands.ShepherdJerred {
         public async ValueTask OnPlayerChat(IPlayerChatEvent chatEvent) {
             var message = chatEvent.Message;
 
-            if (message[0] == '/') await HandleCommand(chatEvent);
+            if (message.ElementAtOrDefault(0) == '/') await HandleCommand(chatEvent);
         }
 
         private async Task HandleCommand(IPlayerChatEvent chatEvent) {
             var message = chatEvent.Message;
             var parts = message.ToLowerInvariant()[1..].Split(" ");
-
-            var command = parts[0];
+            
+            var command = parts.ElementAtOrDefault(0);
 
             switch (command) {
                 case "help":
@@ -43,8 +43,13 @@ namespace Commands.ShepherdJerred {
         private async Task HandleSettingsCommand(IPlayerChatEvent chatEvent) {
             var message = chatEvent.Message;
             var parts = message.ToLowerInvariant()[1..].Split(" ");
+            
+            if (parts.Length < 1) {
+                await chatEvent.PlayerControl.SendChatToPlayerAsync("No argument given");
+                return;
+            }
 
-            var firstArgument = parts[1];
+            var firstArgument = parts.ElementAtOrDefault(1);
             
             if (!chatEvent.ClientPlayer.IsHost) {
                 await chatEvent.PlayerControl.SendChatToPlayerAsync("This command can only be run by the host");
@@ -74,7 +79,7 @@ namespace Commands.ShepherdJerred {
             var message = chatEvent.Message;
             var parts = message.ToLowerInvariant()[1..].Split(" ");
 
-            var secondArgument = parts[2];
+            var secondArgument = parts.ElementAtOrDefault(2);
 
             var mapNames = Enum.GetNames(typeof(MapTypes));
 
@@ -95,7 +100,7 @@ namespace Commands.ShepherdJerred {
             var message = chatEvent.Message;
             var parts = message.ToLowerInvariant()[1..].Split(" ");
 
-            var secondArgument = parts[2];
+            var secondArgument = parts.ElementAtOrDefault(2);
 
             if (int.TryParse(secondArgument, out int num)) {
                 if (num > 3 || num < 1) {

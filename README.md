@@ -8,6 +8,6 @@ Inspired by [Imposter-LobbyCommands](https://github.com/oliver4888/Impostor-Lobb
 
 | Command | Description | Arguments | Example Usage |
 | --- | --- | --- | --- |
-| `/help` | Show help | - | /help |
+| `/help` | Show help | - | `/help` |
 | `/settings impostors` | Sets the number of impostors for the lobby | `1`, `2` or `3` | `/impostors 3` |
 | `/settings map` | Changes the map | `Skeld`, `MiraHQ` or `Polus` | `/map MiraHQ` |
