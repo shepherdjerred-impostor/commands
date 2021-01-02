@@ -1,7 +1,7 @@
 # Commands
-![License](https://img.shields.io/github/license/shepherdjerred-imposter/commands)
-![Build Status](https://img.shields.io/github/workflow/status/shepherdjerred-imposter/commands/CI)
-![Latest Release](https://img.shields.io/github/v/release/shepherdjerred-imposter/commands?include_prereleases)
+[![License](https://img.shields.io/github/license/shepherdjerred-imposter/commands)](https://github.com/shepherdjerred-imposter/commands/blob/main/LICENSE)
+[![Build Status](https://img.shields.io/github/workflow/status/shepherdjerred-imposter/commands/CI)](https://github.com/shepherdjerred-imposter/commands/actions)
+[![Latest Release](https://img.shields.io/github/v/release/shepherdjerred-imposter/commands?include_prereleases)](https://github.com/shepherdjerred-imposter/commands/releases)
 
 Inspired by [Imposter-LobbyCommands](https://github.com/oliver4888/Impostor-LobbyCommands)
 
