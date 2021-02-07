@@ -1,7 +1,7 @@
 # Impostor Commands
 [![License](https://img.shields.io/github/license/shepherdjerred-impostor/commands)](https://github.com/shepherdjerred-impostor/commands/blob/main/LICENSE)
 [![Build Status](https://img.shields.io/github/workflow/status/shepherdjerred-impostor/commands/CI)](https://github.com/shepherdjerred-impostor/commands/actions)
-[![Latest Release](https://img.shields.io/github/v/release/shepherdjerred-imposoer/commands?include_prereleases)](https://github.com/shepherdjerred-impostor/commands/releases)
+[![Latest Release](https://img.shields.io/github/v/release/shepherdjerred-impostor/commands?include_prereleases)](https://github.com/shepherdjerred-impostor/commands/releases)
 
 A plugin for the [Impostor](https://github.com/Impostor/Impostor) server software that adds a few quality of life commands to the game.
 
